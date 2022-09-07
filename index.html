@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css stylesheet  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap ki link yeh style.css ke thik upar honi chaiye is baat ka dhyaan dena  And bootstrap ko use karne ke liye hume getbootstrap.com is website par se link paste karna padti-->
+
+  <!-- Bootstrap 4 css stylesheet  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/1fd71061d7.js" crossorigin="anonymous"></script>
+  <!-- Yeh script humne fontawesome.com par se liya hai iski help se hum log font awesoime is website ke icons humare website me use kar sakte  -->
+
+  <!-- Bootstrap Scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Yaha par hame apne index.html me getbootstrap.com is website se js file ke link ko add karna padta hai  -->
+
+  <!-- Bootstrap 4 Script  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar  navbar-expand-lg navbar-dark">
+        <!-- Yaha par bg-dark yeh remove kare toh title ke background color change change ho jayega , navbar-expand-lg se contact,pricing,Download yeh vertically se horizontal row me aa jayenge  & lg means yeh property hum large device me bhi use kar sakte hai -->
+
+        <a class="navbar-brand" href="">tindog</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- yaha par pehle dropdown button work nahi kar raha tha woh isliye kyu ki data-bs-target ko id se link karwana padta hai means id="navbarNavDropdown yeh & data-bs-target="#navbarNavDropdown"  yeh same hoge data-bs-target yeh target karega id ko  -->
+          <ul class="navbar-nav ms-auto">
+            <!-- Yaha par m for margin and s for start margin auto se contact,pricing and download yeh right side me chale jayenge means left side me more spacing ho jayegi -->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+
+              <!-- Yaha par    <a class="nav-link" href="#footer">Contact</a>  
+              isme href="#footer" id daalne se ye hoga ki jab web page me  contact link par click karenge tab browser yeh automatic hume footer page ki taraf le kar jayega  toh isliye id's yeh bohot important hai website me navigations ko set karne ke liye. -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <!-- Ab yaha par row ke buttons and images me grid system add karne ke liye hume 2 div create karna hoga and  -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>
+            Download</button>
+          <!-- Upar Download se pehle space isliye diya hai kyu ki Apple icon and Download text me Space aa jaye  -->
+
+          <!-- yaha par btn-dark se button background yeh dark ho jayega & btn-lg ke through button ki size yeh large ho jayegi  -->
+
+          <!-- & yaha par fab fa-apple yeh fontawesome.com ki ek class hai jisse Apple ka icon show ho raha hai  -->
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i
+              class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+
+
+        <div class="col-lg-6">
+          <img class="title-img" src="images/iphone6.png" alt="iphone-mockup">
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-circle-check fa-4x"></i>
+          <!-- Yaha par fa-solid fa-circle-check yeh fontawesome.com par se liya gaya hai isse check-circle ka icon show hota hai and fa-4x iske help se icon ki size 4 times badh jaati hai  -->
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-bullseye fa-4x"></i>
+          <!-- Yaha par upar icon isliye likha hai kyu ke icon ko styling karne ke liye tino me common class hona zaroori hai taake styling yeh tino par same apply ho sake  -->
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-heart fa-4x"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <!-- Yaha par data-ride="carousel" iska meaning yeh hai ki  yeh coursal type hai & data-interval="1000" ka meaning yeh hai ki slides yeh 1 sec me change hoti rahegi 1000 means 1 sec & data-pause="hover" ka meaning yeh hai ki  jab bhi hum mouse cousor ko slides par le kar jayenge toh slides change hona band ho jayenge  -->
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on
+            TinDog. Woof.</h2>
+          <img class="testimonials-img" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of
+            their life. I think.</h2>
+          <img class="testimonials-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+        <!-- class="sr-only" means Screen reader only  & class="carousel-control-prev-icon" iska matlab prev-icon button -->
+      </a>
+
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+    <!-- Yaha par upar press-logo yeh class charo images me likhni thi toh uske liye maine alt+shift key press kiya jisse ki mera cursor yeh charo bhi lines ko cover kiya  -->
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <!-- <div class="card-deck"> -->
+    <!-- yaha card-deck se class row isliye kiya kyu ki woh aasan padta  -->
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <!-- Yaha par col-md-6 means Laptop ya computer par cards yeh 50% area cover karenge -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            <!-- btn-lg means larger button & btn-block means button yeh card ki full width lega btn-outline-dark means button ka outline yeh sirf dark rahega -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg btn-light" type="button"><i class="fa-brands fa-google-play"></i>
+        Download</button>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+      <i class="social-icon fa-brands fa-facebook"></i>
+      <i class="social-icon fa-brands fa-twitter"></i>
+      <i class="social-icon fa-brands fa-instagram"></i>
+      <i class="social-icon fa-solid fa-envelope"></i>
+
+
+
+      <p>© Copyright TinDog</p>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

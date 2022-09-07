@@ -1,0 +1,260 @@
+body {
+   font-family: "Montserrat";
+   text-align: center;
+   /* Yaha par body me text align center karne se pure website ke text ka align ye center ho jayega isliye dusre classes me text-align center likhne ki jaroorat nahi   */
+}
+
+/* Headings */
+
+.big-heading {
+   font-family: "Montserrat-Black";
+   font-size: 3.5rem;
+   line-height: 1.5;
+}
+
+.section-heading {
+   font-size: 3rem;
+   line-height: 1.5;
+
+}
+
+
+/* containers */
+.container-fluid {
+
+   padding: 7% 15%;
+   /* padding: 3% 15% 7%; */
+   /* 3% is top 15% is left amd right & 7% is the bottom  */
+
+}
+
+/* sections */
+.colored-section {
+   background-color: #ff4c68;
+   color: #fff;
+}
+
+
+
+.white-section {
+   background-color: #fff;
+}
+
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Montserrat-Bold";
+   /* Yaha par code ki repitition ko kam karne ke liye yeh technique bohot acchi hai isee code ka structure bhi proper rahega and code ki length bhi kam hogi */
+}
+
+h1 {
+
+   /* font-family: "Montserrat-Black"; */
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3.5rem;
+   line-height: 1.5;
+   font-weight: 900;
+   color: #fff;
+
+}
+
+h2 {
+
+   font-size: 3rem;
+   line-height: 1.5;
+}
+
+
+p {
+   color: #8f8f8f;
+}
+
+/* Navigation Bar  */
+
+.navbar-brand {
+   font-family: "Ubuntu";
+   font-size: 2.5rem;
+   font-weight: bold;
+
+}
+
+.navbar {
+   padding: 0 0 4.5rem;
+
+}
+
+.nav-item {
+   padding: 0 18px;
+}
+
+/* Download buttons */
+.download-button {
+   margin: 5% 3% 5% 0;
+
+}
+
+
+/* title-section  */
+
+
+#title .container-fluid {
+   padding: 3% 15%;
+   text-align: left;
+
+
+}
+
+/* Title img  */
+
+.title-img {
+   width: 60%;
+   transform: rotate(25deg);
+   /* transform property se image yeh rotae kar sakte hai kisi bhi degree me */
+   position: absolute;
+   /* z-index: -1; */
+   /*z-index -1 means image yeh title section ke piche chale jayega */
+   right: 30%;
+   /* isse image ki margin 30% badh jayegi means image yeh left side me thodi si move hogi  */
+}
+
+/* features-Section */
+
+#features {
+
+   /* Yaha par 7% yeh top and bottom ke liye hai & 15% yeh left and right hai  */
+
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+
+
+}
+
+.feature-title {
+   font-size: 2rem;
+}
+
+.feature-box {
+   /* text-align: center; */
+   padding: 4.5%;
+
+
+}
+
+.icon {
+
+   color: #ef8172;
+   margin-bottom: 1rem;
+}
+
+.icon:hover {
+   color: #ff4c68;
+}
+
+/* Testimonials Section  */
+
+#testimonials {
+
+   /* text-align: center; */
+   background-color: #ef8172;
+   padding: 35% 0% 7%;
+
+   /* 35 is top, 0 is left and right, 7 is bottom  */
+
+
+}
+
+.testimonial-text {
+   /* font-family: Monserrat-Black; */
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3rem;
+   line-height: 1.5;
+   font-weight: 600;
+
+}
+
+.testimonials-img {
+   width: 10%;
+   border-radius: 100%;
+   margin: 20px;
+
+}
+
+/* .carousel-item {
+ 
+   /* Yaha par carousel-item class me joh bhi material hai uski padding 7% top and bottom and 15% right and left ho jayengi  */
+/* }  */
+
+/* Press-Section */
+
+#press {
+   background-color: #ef8172;
+   /* text-align: center; */
+
+}
+
+.press-logo {
+   width: 15%;
+   margin: 20px 20px 50px;
+
+   /* top padding is 1st wala 20px, right & left padding is 2nd wala 20px 
+   bottom padding is 50px  */
+
+}
+
+/* pricing section  */
+
+#pricing {
+   padding: 100px;
+   /* text-align: center; */
+   /* means pricing section me jitna bhi text likha hai woh chahe cards me ho ya headings me ya paragraph me woh sab center me ho jaye  */
+
+
+}
+
+.price-text {
+   font-size: 3rem;
+   line-height: 1.5;
+
+}
+
+.pricing-column {
+   padding: 3% 2%;
+   /* 3% yeh top and bottom ke liye & 2% yeh left and right ke liye hai  */
+
+}
+
+/* CTA Section  */
+
+
+.cta-heading {
+   font-family: "Monserrat-Black";
+   font-size: 3.5rem;
+   line-height: 1.5;
+}
+
+/* Footer-Section  */
+
+
+
+.social-icon {
+   margin: 20px 10px;
+   /* 20 is top  and bottom & 10 is left and right  */
+}
+
+@media (max-width: 1028px) {
+   #title {
+      text-align: center;
+
+   }
+
+   .title-img {
+      position: static;
+      transform: rotate(0);
+      /* Yaha par jab screen size 1028px se kam rahegi tab phone image size yeh 0 means straight ho jayegi   */
+   }
+}
